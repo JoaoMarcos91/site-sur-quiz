@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz de Maths</title>
+    <title>Quiz de Mathématiques - Niveau 2</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,7 +63,7 @@
         #iniciar:hover {
             border-radius: 5px;
             border: 1px solid transparent;
-            box-shadow: 2px 2.5px 5px 2px #bababa;
+            box-shadow: 2px 2.5px 5px 2px #acacac;
         }
 
         #verificar-resposta {
@@ -75,7 +75,7 @@
         #verificar-resposta:hover {
             border-radius: 5px;
             border: 1px solid transparent;
-            box-shadow: 2px 2.5px 5px 2px #bababa;
+            box-shadow: 2px 2.5px 5px 2px #acacac;
         }
 
         #proxima-pergunta {
@@ -87,7 +87,7 @@
         #proxima-pergunta:hover {
             border-radius: 5px;
             border: 1px solid transparent;
-            box-shadow: 2px 2.5px 5px 2px #bababa;
+            box-shadow: 2px 2.5px 5px 2px #acacac;
         }
 
         #recomecar {
@@ -99,7 +99,7 @@
         #recomecar:hover {
             border-radius: 5px;
             border: 1px solid transparent;
-            box-shadow: 2px 2.5px 5px 2px #bababa;
+            box-shadow: 2px 2.5px 5px 2px #acacac;
         }
 
         .opcao:hover {
@@ -137,7 +137,7 @@
     <div id="progresso">
         <div id="barra-progresso"></div>
     </div>
-    <h1>Quiz de Maths</h1>
+    <h1>Quiz de Mathématiques - Niveau 2</h1>
     <div id="quiz">
         <button id="iniciar">Commencer</button>
     </div>
@@ -149,53 +149,53 @@
     <script>
         const perguntas = [
             {
-                pergunta: "Quels sont les operations prioritaires dans un calcul sans paranthèses?",
-                opcoes: ["La somme", "La multipliacation et la division", "Les paranthèses", "La multiplication seulement"],
+                pergunta: "Combien vaut 8 × (3 + 5) − 10 ?",
+                opcoes: ["40", "48", "54", "34"],
                 resposta: 1
             },
             {
-                pergunta: "Où est l'erreur dans ce calcul: 9 + 7 - 4 (3 - 2 × 3 : (3 - 2)",
-                opcoes: ["9 + 7", "3 - 2 × 3", "(3 - 2)", "(3 - 2 × 3 : (3 - 2)"],
-                resposta: 3
-            },
-            {
-                pergunta: "Quel est le résultat de 8 × 99",
-                opcoes: ["792", "599", "800 + 1", "378,7"],
+                pergunta: "Quel est la valeur de 2⁵ + 3⁴ ?",
+                opcoes: ["40", "32", "62", "58"],
                 resposta: 0
             },
             {
-                pergunta: "Un rectangle a une longueur de 12 cm et une largeur de 5 cm. Quel est son périmètre ?",
-                opcoes: ["34 cm" ,"24 cm", "17 cm", "60 cm"],
+                pergunta: "Si x = 4, quelle est la valeur de 3x² − 5x + 1 ?",
+                opcoes: ["33", "27", "29", "25"],
                 resposta: 0
             },
             {
-                pergunta: "Quel est le nombre suivant dans cette suite : 3, 6, 12, 24, ... ?",
-                opcoes: ["30", "36", "42", "48"],
-                resposta: 3
+                pergunta: "Combien vaut 18 ÷ (3 + 3) × 4 ?",
+                opcoes: ["12", "16", "24", "36"],
+                resposta: 0
             },
             {
-                pergunta: "Dans un cercle, quel est l’angle en degrés d’un demi-cercle ?",
-                opcoes: ["90°", "120°", "180°", "360°"],
-                resposta: 2
+                pergunta: "Quelle est l'aire d'un triangle de base 10 cm et de hauteur 6 cm ?",
+                opcoes: ["30 cm²", "36 cm²", "60 cm²", "12 cm²"],
+                resposta: 0
             },
             {
-                pergunta: "Quel est le résultat de 3/4 + 1/2?",
-                opcoes: ["1" ,"5/4" ,"3/2","7/4"],
+                pergunta: "Dans un cercle, si le rayon est de 7 cm, quelle est l'aire ?",
+                opcoes: ["154 cm²", "49 cm²", "75 cm²", "21 cm²"],
                 resposta: 1
             },
             {
-                pergunta: "Si un angle mesure 30° et un autre angle mesure 60°, quel est le troisième angle dans un triangle ?",
-                opcoes: ["60°", "90°", "120°", "150°"],
+                pergunta: "Si la somme de deux nombres est 25 et l'un d'eux est 13, quel est l'autre nombre ?",
+                opcoes: ["12", "10", "13", "15"],
                 resposta: 1
             },
             {
-                pergunta: "Que vaut 12 − (3 × 2) + 4?",
-                opcoes: ["8", "14", "12", "10"],
-                resposta: 3
+                pergunta: "Quel est le résultat de 10³ − 9² ?",
+                opcoes: ["1000", "901", "990", "870"],
+                resposta: 1
             },
             {
-                pergunta: "Dans un sac, il y a 5 billes rouges, 3 billes bleues et 2 billes vertes. Quelle est la probabilité de tirer une bille rouge au hasard ?",
-                opcoes: ["5/(5 + 2 + 2)", "5/10", "5/9", "5/12"],
+                pergunta: "Quelle est la racine carrée de 121 ?",
+                opcoes: ["11", "12", "13", "10"],
+                resposta: 0
+            },
+            {
+                pergunta: "Si un nombre est divisible par 2 et 3, par quel autre nombre est-il aussi divisible ?",
+                opcoes: ["4", "6", "8", "9"],
                 resposta: 1
             }
         ];
@@ -244,7 +244,7 @@
                     opcoesDiv.appendChild(botao);
                 });
 
-                quizDiv.innerHTML = '<button id="verificar-resposta" onclick="verificarResposta()">Vérifier votre réponse</button>';
+                quizDiv.innerHTML = '<button id="verificar-resposta" onclick="verificarResposta()">Vérifier la réponse</button>';
             } else {
                 mostrarResumo();
             }
@@ -253,72 +253,68 @@
         function selecionarResposta(index) {
             respostaSelecionada = index;
             document.querySelectorAll('.opcao').forEach((botao, i) => {
-                botao.classList.toggle('selecionada', i === index);
+                botao.classList.remove('selecionada');
+                if (i === index) {
+                    botao.classList.add('selecionada');
+                }
             });
         }
-        function verificarResposta() {
-            if (respostaSelecionada === null) {
-                alert('Veuillez sélectionner une réponse.');
-                return;
-            }
 
+        function verificarResposta() {
             const perguntaObj = perguntasEmbaralhadas[perguntaAtual];
             const opcoes = document.querySelectorAll('.opcao');
-            opcoes[perguntaObj.resposta].classList.add('correta');
+
+            opcoes.forEach((opcao, index) => {
+                opcao.classList.remove('correta', 'incorreta');
+                if (index === perguntaObj.resposta) {
+                    opcao.classList.add('correta');
+                } else if (index === respostaSelecionada) {
+                    opcao.classList.add('incorreta');
+                }
+            });
 
             respostasUsuario.push({
                 pergunta: perguntaObj.pergunta,
-                respostaUsuario: respostaSelecionada,
-                respostaCorreta: perguntaObj.resposta
+                correta: respostaSelecionada === perguntaObj.resposta,
+                respostaUsuario: perguntaObj.opcoes[respostaSelecionada]
             });
 
             if (respostaSelecionada === perguntaObj.resposta) {
-                respostaDiv.textContent = 'Correct!';
+                respostaDiv.textContent = "Bonne réponse !";
             } else {
-                respostaDiv.textContent = 'Incorrect. La réponse correcte est: ' + perguntaObj.opcoes[perguntaObj.resposta];
-                opcoes[respostaSelecionada].classList.add('incorreta');
+                respostaDiv.textContent = `Mauvaise réponse. La bonne réponse est: ${perguntaObj.opcoes[perguntaObj.resposta]}`;
             }
 
-            quizDiv.innerHTML = '<button id="proxima-pergunta" onclick="proximaPergunta()">Question Suivante</button>';
-        }
-
-        function proximaPergunta() {
             perguntaAtual++;
             atualizarBarraProgresso();
-            mostrarPergunta();
+
+            if (perguntaAtual < perguntasEmbaralhadas.length) {
+                quizDiv.innerHTML = '<button id="proxima-pergunta" onclick="mostrarPergunta()">Question suivante</button>';
+            } else {
+                quizDiv.innerHTML = '<button id="recomecar" onclick="iniciarQuiz()">Recommencer</button>';
+            }
         }
 
         function atualizarBarraProgresso() {
             const progresso = (perguntaAtual / perguntasEmbaralhadas.length) * 100;
-            barraProgresso.style.width = progresso + '%';
-            barraProgresso.textContent = Math.round(progresso) + '%';
+            barraProgresso.style.width = `${progresso}%`;
+            barraProgresso.textContent = `${Math.round(progresso)}%`;
         }
 
         function mostrarResumo() {
-            perguntaDiv.textContent = 'Quiz concluído!';
-            opcoesDiv.innerHTML = '';
-            respostaDiv.textContent = '';
-            quizDiv.innerHTML = '<button id="recomecar" onclick="iniciarQuiz()">Recommencer</button>';
-
-            let html = '<h2>Corrigé:</h2>';
-            let pontuacao = 0;
-
-            respostasUsuario.forEach((resposta, index) => {
-                const perguntaObj = perguntasEmbaralhadas[index];
-                const estaCorreta = resposta.respostaUsuario === resposta.respostaCorreta;
-                if (estaCorreta) pontuacao++;
-
-                html += `
-                    <div class="resumo-item ${estaCorreta ? 'correta' : 'incorreta'}">
-                        <strong>Question ${index + 1}:</strong> ${resposta.pergunta}<br>
-                        <strong>Ta réponse</strong> ${perguntaObj.opcoes[resposta.respostaUsuario]}<br>
-                        ${!estaCorreta ? `<strong>Réponse correcte:</strong> ${perguntaObj.opcoes[resposta.respostaCorreta]}<br>` : ''}
-                    </div>
-                `;
+            resumoDiv.innerHTML = "<h2>Résumé des réponses :</h2>";
+            respostasUsuario.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('resumo-item');
+                if (item.correta) {
+                    div.classList.add('correta');
+                    div.textContent = `Question: ${item.pergunta} | Votre réponse: ${item.respostaUsuario} (Correcte)`;
+                } else {
+                    div.classList.add('incorreta');
+                    div.textContent = `Question: ${item.pergunta} | Votre réponse: ${item.respostaUsuario} (Incorrecte)`;
+                }
+                resumoDiv.appendChild(div);
             });
-
-            html += `<h3>Score final: ${pontuacao} sur ${perguntasEmbaralhadas.length}</h3>`;
-            resumoDiv.innerHTML = html;
         }
 
         document.getElementById('iniciar').addEventListener('click', iniciarQuiz);
