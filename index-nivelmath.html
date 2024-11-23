@@ -85,13 +85,27 @@
 
         <nav>
             <a href="https://site-sur-quiz.vercel.app/index-quizmath.html">Niveau 1</a>
-            <a href="">Niveau 2</a>
-            <a href="">Niveau 3</a>
+            <a id="btnn2" href="">Niveau 2</a>
+            <a id="btnn3" href="">Niveau 3</a>
         </nav>
     </div>
 
     <div>
         <a class="a" href="https://site-sur-quiz.vercel.app">Quiz de Maths</a>
     </div>
+
+    <script>
+
+        const alerta = ("Quiz indisponible dans le moment.")
+
+        document.getElementById("btnn2").addEventListener("click", function(){
+            alert(alerta);
+        });
+
+        document.getElementById("btnn3").addEventListener("click", function(){
+            alert(alerta);
+        });
+
+    </script>
 </body>
 </html>
